@@ -142,9 +142,9 @@ export default function TuGatherLanding() {
       .tg-modal-body p{margin-bottom:12px}
       .tg-modal::-webkit-scrollbar{width:6px}.tg-modal::-webkit-scrollbar-track{background:transparent}.tg-modal::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
       .tg-footer-col a.clickable{cursor:pointer}.tg-footer-col a.disabled{cursor:default;pointer-events:none}
-      @media(max-width:1000px){.tg-showcase-hero{transform:scale(0.7);transform-origin:top center;margin-bottom:-120px}.tg-features-grid{grid-template-columns:repeat(2,1fr)}.tg-showcase-row,.tg-showcase-row.reverse{flex-direction:column;gap:36px}.tg-footer-grid{grid-template-columns:1fr 1fr}}
-      @media(max-width:700px){.tg-showcase-hero{transform:scale(0.5);margin-bottom:-220px}.tg-features-grid{grid-template-columns:1fr}}
-      @media(max-width:600px){.tg-showcase-hero{transform:scale(0.45);margin-bottom:-260px}.tg-footer-grid{grid-template-columns:1fr}.tg-nav{padding:12px 20px}.tg-hero{padding:100px 20px 30px}}
+      @media(max-width:1000px){.tg-showcase-hero{transform:scale(0.7);transform-origin:top center;margin-bottom:-180px}.tg-features-grid{grid-template-columns:repeat(2,1fr)}.tg-showcase-row,.tg-showcase-row.reverse{flex-direction:column;gap:36px}.tg-footer-grid{grid-template-columns:1fr 1fr}}
+      @media(max-width:700px){.tg-showcase-hero{transform:scale(0.5);margin-bottom:-300px}.tg-features-grid{grid-template-columns:1fr}}
+      @media(max-width:600px){.tg-showcase-hero{transform:scale(0.45);margin-bottom:-340px}.tg-footer-grid{grid-template-columns:1fr}.tg-nav{padding:12px 20px}.tg-hero{padding:100px 20px 30px}}
     `}</style>
 
     <nav className="tg-nav">
