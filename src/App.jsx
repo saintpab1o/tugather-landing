@@ -142,9 +142,9 @@ export default function TuGatherLanding() {
       .tg-modal-body p{margin-bottom:12px}
       .tg-modal::-webkit-scrollbar{width:6px}.tg-modal::-webkit-scrollbar-track{background:transparent}.tg-modal::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
       .tg-footer-col a.clickable{cursor:pointer}.tg-footer-col a.disabled{cursor:default;pointer-events:none}
-      @media(max-width:1000px){.tg-float-card{transform:scale(0.75);transform-origin:center}.tg-float-flight{top:10px;left:calc(50% - 320px)}.tg-float-expenses{top:10px;right:calc(50% - 300px)}.tg-float-members{bottom:60px;left:calc(50% - 310px)}.tg-float-itinerary{bottom:50px;right:calc(50% - 320px)}.tg-showcase-hero{min-height:auto;padding:0 20px}.tg-features-grid{grid-template-columns:repeat(2,1fr)}.tg-showcase-row,.tg-showcase-row.reverse{flex-direction:column;gap:36px}.tg-footer-grid{grid-template-columns:1fr 1fr}.tg-center-phone{width:240px;height:500px}}
-      @media(max-width:700px){.tg-float-card{display:none}.tg-center-phone{width:220px;height:460px}.tg-showcase-hero{min-height:auto}}
-      @media(max-width:600px){.tg-features-grid{grid-template-columns:1fr}.tg-footer-grid{grid-template-columns:1fr}.tg-nav{padding:12px 20px}.tg-hero{padding:100px 20px 30px}.tg-center-phone{width:200px;height:420px}}
+      @media(max-width:1000px){.tg-showcase-hero{transform:scale(0.7);transform-origin:top center;margin-bottom:-120px}.tg-features-grid{grid-template-columns:repeat(2,1fr)}.tg-showcase-row,.tg-showcase-row.reverse{flex-direction:column;gap:36px}.tg-footer-grid{grid-template-columns:1fr 1fr}}
+      @media(max-width:700px){.tg-showcase-hero{transform:scale(0.5);margin-bottom:-220px}.tg-features-grid{grid-template-columns:1fr}}
+      @media(max-width:600px){.tg-showcase-hero{transform:scale(0.45);margin-bottom:-260px}.tg-footer-grid{grid-template-columns:1fr}.tg-nav{padding:12px 20px}.tg-hero{padding:100px 20px 30px}}
     `}</style>
 
     <nav className="tg-nav">
