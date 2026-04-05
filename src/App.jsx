@@ -28,7 +28,7 @@ export default function TuGatherLanding() {
   return (<div style={{ minHeight: "100vh", background: "#0a0a0a", color: "#fff", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
     <style>{`
       @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-      *{margin:0;padding:0;box-sizing:border-box}body{background:#0a0a0a;overflow-x:hidden}
+      *{margin:0;padding:0;box-sizing:border-box}html,body{background:#0a0a0a;overflow-x:hidden;max-width:100vw}
       .tg-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 40px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(24px);background:rgba(10,10,10,0.85);border-bottom:1px solid rgba(42,178,110,0.08)}
       .tg-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
       .tg-logo-icon{width:34px;height:34px;background:linear-gradient(135deg,#2ab26e,#6cf4b0);border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#0a0a0a}
@@ -142,8 +142,9 @@ export default function TuGatherLanding() {
       .tg-modal-body p{margin-bottom:12px}
       .tg-modal::-webkit-scrollbar{width:6px}.tg-modal::-webkit-scrollbar-track{background:transparent}.tg-modal::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
       .tg-footer-col a.clickable{cursor:pointer}.tg-footer-col a.disabled{cursor:default;pointer-events:none}
-      @media(max-width:1000px){.tg-float-card{display:none}.tg-showcase-hero{min-height:auto;padding:0 20px}.tg-features-grid{grid-template-columns:repeat(2,1fr)}.tg-showcase-row,.tg-showcase-row.reverse{flex-direction:column;gap:36px}.tg-footer-grid{grid-template-columns:1fr 1fr}}
-      @media(max-width:600px){.tg-features-grid{grid-template-columns:1fr}.tg-footer-grid{grid-template-columns:1fr}.tg-nav{padding:12px 20px}.tg-hero{padding:100px 20px 30px}.tg-center-phone{width:240px;height:490px}}
+      @media(max-width:1000px){.tg-float-card{transform:scale(0.75);transform-origin:center}.tg-float-flight{top:10px;left:calc(50% - 320px)}.tg-float-expenses{top:10px;right:calc(50% - 300px)}.tg-float-members{bottom:60px;left:calc(50% - 310px)}.tg-float-itinerary{bottom:50px;right:calc(50% - 320px)}.tg-showcase-hero{min-height:auto;padding:0 20px}.tg-features-grid{grid-template-columns:repeat(2,1fr)}.tg-showcase-row,.tg-showcase-row.reverse{flex-direction:column;gap:36px}.tg-footer-grid{grid-template-columns:1fr 1fr}.tg-center-phone{width:240px;height:500px}}
+      @media(max-width:700px){.tg-float-card{display:none}.tg-center-phone{width:220px;height:460px}.tg-showcase-hero{min-height:auto}}
+      @media(max-width:600px){.tg-features-grid{grid-template-columns:1fr}.tg-footer-grid{grid-template-columns:1fr}.tg-nav{padding:12px 20px}.tg-hero{padding:100px 20px 30px}.tg-center-phone{width:200px;height:420px}}
     `}</style>
 
     <nav className="tg-nav">
