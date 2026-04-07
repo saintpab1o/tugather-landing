@@ -4,17 +4,7 @@ const APP_STORE_LINK = "#";
 
 export default function TuGatherLanding() {
   const [visible, setVisible] = useState(false);
-  const [modal, setModal] = useState(null); // 'privacy' | 'terms' | null
   useEffect(() => { setTimeout(() => setVisible(true), 100); }, []);
-  
-  useEffect(() => {
-    if (modal) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => { document.body.style.overflow = ''; };
-  }, [modal]);
 
   const features = [
     { icon: "🎉", title: "Event Planning", desc: "Create events for trips, birthdays, weddings, and game nights. Add dates, locations, and cover photos." },
@@ -452,7 +442,7 @@ export default function TuGatherLanding() {
         </div>
         <div className="tg-footer-col"><h4>Product</h4><a className="disabled">Features</a><a className="disabled">Download</a><a className="disabled">Updates</a></div>
         <div className="tg-footer-col"><h4>Company</h4><a className="disabled">About</a><a className="disabled">Press</a><a className="disabled">Contact</a></div>
-        <div className="tg-footer-col"><h4>Legal</h4><a className="clickable" onClick={()=>setModal('privacy')} style={{cursor:'pointer'}}>Privacy Policy</a><a className="clickable" onClick={()=>setModal('terms')} style={{cursor:'pointer'}}>Terms of Service</a></div>
+        <div className="tg-footer-col"><h4>Legal</h4><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a></div>
       </div>
       <div className="tg-footer-bottom">
         <p>&copy; 2026 TuGather. All rights reserved.</p>
@@ -460,64 +450,5 @@ export default function TuGatherLanding() {
       </div>
     </footer>
 
-    {/* Privacy & Terms Modals */}
-    {modal && (
-      <div className="tg-modal-overlay" onClick={()=>setModal(null)} onTouchMove={e=>e.preventDefault()}>
-        <div className="tg-modal" onClick={e=>e.stopPropagation()} onTouchMove={e=>e.stopPropagation()}>
-          <div className="tg-modal-header">
-            <h3>{modal==='privacy'?'Privacy Policy':'Terms of Service'}</h3>
-            <button className="tg-modal-close" onClick={()=>setModal(null)}>✕</button>
-          </div>
-          <div className="tg-modal-body">
-            {modal==='privacy' ? (<>
-              <p><strong>Last Updated:</strong> December 29, 2024</p>
-              <h4>Introduction</h4>
-              <p>MKDW LLC ("we," "us," or "our") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website, mobile application, and related services (collectively, the "Services").</p>
-              <p>By using our Services, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
-              <h4>Information We Collect</h4>
-              <p><strong>Personal Information:</strong> We collect personal information that you voluntarily provide when you create an account, use our Services, or contact support. This may include your name, email address, phone number, payment information, and profile details.</p>
-              <p><strong>Usage Information:</strong> We automatically collect device information, IP address, location data, usage patterns, log files, analytics data, and cookies.</p>
-              <p><strong>Payment Information:</strong> We use third-party payment processors (such as Stripe) to handle transactions. We do not store complete payment card information on our servers.</p>
-              <h4>How We Use Your Information</h4>
-              <p>We use your information to process transactions, provide customer support, facilitate event management, enable communication between users, analyze usage patterns, improve our Services, send notifications, comply with legal obligations, prevent fraud, and ensure security.</p>
-              <h4>How We Share Your Information</h4>
-              <p>We share information with trusted third-party service providers, event organizers (when necessary for event attendance), as required by law, and in connection with business transfers such as mergers or acquisitions.</p>
-              <h4>Your Privacy Rights</h4>
-              <p>Depending on your location, you may have rights to access, correct, delete, or port your personal information, opt out of marketing communications, and request limitation of processing. Contact us at privacy@tugather.app to exercise these rights.</p>
-              <h4>Data Security</h4>
-              <p>We implement encryption, regular security assessments, access controls, and secure payment processing through PCI-compliant providers. However, no method of transmission over the internet is 100% secure.</p>
-              <h4>Children's Privacy</h4>
-              <p>Our Services are not intended for children under 18. We do not knowingly collect personal information from children under 18.</p>
-              <h4>Contact</h4>
-              <p>If you have questions about this Privacy Policy, please contact us at support@tugather.app.</p>
-            </>) : (<>
-              <p><strong>Last Updated:</strong> December 29, 2024</p>
-              <h4>Acceptance of Terms</h4>
-              <p>By accessing or using TuGather ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App. The App is operated by MKDW LLC.</p>
-              <h4>Description of Service</h4>
-              <p>TuGather is a mobile application that allows users to plan, organize, and manage group events, including trips, parties, weddings, and gatherings. Features include event creation, guest management, group chat, expense splitting, itinerary planning, and media sharing.</p>
-              <h4>User Accounts</h4>
-              <p>You must create an account to use certain features. You are responsible for maintaining the confidentiality of your account credentials and for all activities under your account. You must be at least 18 years old to create an account. You agree to provide accurate, current, and complete information.</p>
-              <h4>User Conduct</h4>
-              <p>You agree not to use the App to violate any laws, infringe on intellectual property rights, transmit harmful or offensive content, harass or harm other users, interfere with the App's operation, or attempt to gain unauthorized access to any systems.</p>
-              <h4>Content</h4>
-              <p>You retain ownership of content you submit through the App. By posting content, you grant us a non-exclusive, worldwide, royalty-free license to use, display, and distribute your content in connection with the App. You are solely responsible for content you post.</p>
-              <h4>Payments & Expenses</h4>
-              <p>The App facilitates expense tracking and splitting between users. Actual payments between users are processed through third-party services (Venmo, PayPal, Zelle, Cash App). We are not responsible for disputes between users regarding payments or expenses.</p>
-              <h4>Intellectual Property</h4>
-              <p>The App, its design, features, and content are owned by MKDW LLC and protected by intellectual property laws. You may not copy, modify, distribute, or reverse engineer any part of the App without written permission.</p>
-              <h4>Limitation of Liability</h4>
-              <p>To the maximum extent permitted by law, MKDW LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the App. Our total liability shall not exceed the amount you have paid us in the preceding 12 months.</p>
-              <h4>Termination</h4>
-              <p>We may suspend or terminate your account at any time for violation of these Terms or for any other reason at our sole discretion. Upon termination, your right to use the App ceases immediately.</p>
-              <h4>Changes to Terms</h4>
-              <p>We may update these Terms from time to time. Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
-              <h4>Contact</h4>
-              <p>For questions about these Terms, contact us at support@tugather.app.</p>
-            </>)}
-          </div>
-        </div>
-      </div>
-    )}
   </div>);
 }
