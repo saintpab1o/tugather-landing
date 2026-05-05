@@ -438,14 +438,14 @@ export default function TuGatherLanding() {
             <div className="tg-logo-icon" style={{width:28,height:28,fontSize:11,borderRadius:7}}>Tú</div>
             <div className="tg-logo-text" style={{fontSize:16}}><span style={{color:'#2ab26e'}}>Tú</span>Gather</div>
           </div>
-          <p>Your go-to app for planning and organizing events with friends and family.</p>
+          <p>TuGather is a product of MKDW LLC. Your go-to app for planning and organizing events with friends and family.</p>
         </div>
         <div className="tg-footer-col"><h4>Product</h4><a className="disabled">Features</a><a className="disabled">Download</a><a className="disabled">Updates</a></div>
         <div className="tg-footer-col"><h4>Company</h4><a className="disabled">About</a><a className="disabled">Press</a><a className="disabled">Contact</a></div>
         <div className="tg-footer-col"><h4>Legal</h4><a href="/privacy.html">Privacy Policy</a><a href="/terms.html">Terms of Service</a></div>
       </div>
       <div className="tg-footer-bottom">
-        <p>&copy; 2026 TuGather. All rights reserved.</p>
+        <p>&copy; 2026 MKDW LLC. TuGather is a product of MKDW LLC. All rights reserved.</p>
         <p>Made with 💚</p>
       </div>
     </footer>
